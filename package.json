@@ -1,0 +1,12 @@
+{
+  "name": "cyberfiction",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Welcome to Cyberfiction! This project is a clone of the award-winning Cyberfiction official website. It showcases my skills in HTML, Canvas, Tailwind, Vanilla JS, GSAP, and ScrollTrigger.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
