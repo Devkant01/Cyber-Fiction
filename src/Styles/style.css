@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* developer defined */
+
+.text-stroke{
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+}
+
+.loopContent{
+    animation: textLoop 24s linear 0s infinite normal none;
+}
+
+.scrollImages{
+    animation: textLoop 24s linear 0s infinite normal none;
+}
+
+.multipleLoop1{
+    animation: textLoop 30s linear 0s infinite reverse none;
+}
+
+.multipleLoop2{
+    animation: textLoop 22s linear 0s infinite normal none;
+}
+
+.multipleLoop3{
+    animation: textLoop 35s linear 0s infinite reverse none;
+}
+
+#scrollImages img{
+    max-width: 420px;
+}
+
+@keyframes textLoop {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+
+.btn::before{
+    content: '';
+    width: 150%;
+    height: 450%;
+    background-color: #15b2e5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform:rotate(45deg) translateX(-50%) translateY(73%);
+    /* transform: rotate(45deg) translateX(-30%) translateY(-20%); */
+    transition: all 0.5s;
+    z-index: 20;
+}
+
+.btn:hover{
+    &::before {
+            transform:rotate(45deg) translateX(-50%) translateY(0%);
+            z-index: 20;
+        }
+}
+
+#page_2_2{
+    background-position-x: 0;
+}
