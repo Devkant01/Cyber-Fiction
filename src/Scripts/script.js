@@ -21,7 +21,7 @@ function preLoader() {
     for (var i = 0; i <= frames.maxIndex; i++) {
         const img = new Image();
 
-        img.src = `../../public/frames/frame-(${i + 1}).png`;
+        img.src = `./public/frames/frame-(${i + 1}).png`;
         // console.log(`image loaded ${i + 1}`);
         img.onload = () => {
             // console.log(`Image ${i + 1} loaded: `, imgLoaded);
