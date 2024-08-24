@@ -24,7 +24,6 @@ function preLoader() {
         img.src = `./public/frames/frame-(${i + 1}).png`;
         // console.log(`image loaded ${i + 1}`);
         img.onload = () => {
-            // console.log(`Image ${i + 1} loaded: `, imgLoaded);
             imgLoaded++;
             counter.innerHTML = `${Math.floor((imgLoaded / frames.maxIndex) * 100)}%`;
             if (imgLoaded == frames.maxIndex) {
