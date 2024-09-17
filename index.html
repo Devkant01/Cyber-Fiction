@@ -15,6 +15,10 @@
 
 <body
     class="relative text-white font-Urbanist bg-[linear-gradient(70deg,#000,#343434)] br-repeat bg-no-repeat bg-cover overflow-x-hidden">
+    <div id="parda" class="h-screen w-screen fixed z-50 md:hidden">
+        <h1>To get a better experience, please increase your browser width.</h1>
+        <h2 class="getWindowWidht">Your current width is: -- pixels.</h2>
+    </div>
     <div id="before-loading" class="relative w-full h-screen z-50 bg-white flex justify-end items-end text-black">
         <div class="counter text-9xl pb-16 pr-16 font-bold">
             --
@@ -398,6 +402,17 @@ PLAYGROUND
         integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./src/Scripts/script.js"></script>
+    <script>
+        function updateWindowWidth() {
+          const width = window.innerWidth;
+          const widthElement = document.querySelector('.getWindowWidth');
+          if (widthElement) {
+            widthElement.innerText = `Your current width is: ${width} pixels`;
+          }
+        }
+        updateWindowWidth();
+        window.addEventListener('resize', updateWindowWidth);
+    </script>
 </body>
 
 </html>
